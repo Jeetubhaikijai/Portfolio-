@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You !!!</title>
+    <link rel="icon" type="image/x-icon" href="images/image_2023-06-07_134759991-removebg-preview.png" id="favicon">
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+    <section class="thankyouCard">
+        <div class="card">
+            <h1>Thank you for connecting with me !</h1>
+            <h2>Click <span class="thankmessage"><b><a href="index.html">here</a></b></span>  to go back to home page</h2>
+        </div>
+    </section> 
+    <canvas id="my-canvas"></canvas> 
+    <script src="js/index.min.js"></script>   
+    <script>
+        var confettiElement = document.getElementById('my-canvas');
+        var confettiSettings = { target:confettiElement,max:100,size:1,animate:true,props:["circle","square","triangle","line"],colors:[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],clock:17,rotate:true,start_from_edge:false,respawn:true};
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+    </script>
+</body>
+</html>
